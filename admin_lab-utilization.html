@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/style-1.css">
-    <title>ICS Computer Lab</title>
+    <title>Lab Utilization</title>
 </head>
 <body>
     <main id="main-container">
@@ -55,7 +55,7 @@
                             <select id="lab-choice">
                                 <option>ICS Computer Lab</option>
                             </select>
-                            <a href="" class="btn-search"><i class="fas fa-search"></i></a>
+                            <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
                         </div>
                     </form>
 
@@ -83,7 +83,7 @@
                     <form action="">
                         <div class="pc-time-search">
                             <h4>Search for Vacant</h4><input type="time">
-                            <a href="" class="btn-search"><i class="fas fa-search"></i></a>
+                            <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
                         </div>
                     </form>
 
@@ -123,28 +123,37 @@
                         <form action="">
                             <div class="date-search">
                                 <input type="date">
-                                <a href="" class="btn-search"><i class="fas fa-search"></i></a>
+                                <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
                             </div>
                         </form>
     
                     </div>
                     <div class="lab-users-reservations-wrapper">
                         <!--This is the output div of Table-like User Reservation information-->
-                        <div class="lab-user-reservation-wrapper">
-                            <div class="lab-user-reservation-item">
-                                <p>PC 1</p>
-                            </div>
-                            <div class="lab-user-reservation-item">
-                                <p>ID: 1</p>
-                                <p>Juan Dela Cruz</p>
-                            </div>
-                            <div class="lab-user-reservation-item">
-                                <p>BSCS</p>
-                            </div>
-                            <div class="lab-user-reservation-item">
-                                <p>juan@gmail.com</p>
-                            </div>
-                        </div>  
+                        <div class="customer-account-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Res. ID</th>
+                                        <th>PC No.</th>
+                                        <th>Last Name</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>Theodores Theodoress</td>
+                                        <td>
+                                            <div class="customer-account-options">
+                                                <button class="btn-delete"><i class="fas fa-trash-alt"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div>
                     </div>
                 </div>
             </div>  
@@ -165,7 +174,7 @@
                             <thead>
                                 <tr>
                                     <th>Res. ID</th>
-                                    <th>Name</th>
+                                    <th>Lastname</th>
                                     <th>From</th>
                                     <th>To</th>
                                 </tr>
@@ -173,9 +182,9 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Juan</td>
-                                    <td>8:00am</td>
-                                    <td>9:00am</td>
+                                    <td>Theodores Theodoress</td>
+                                    <td>12:00am</td>
+                                    <td>12:00am</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -203,7 +212,7 @@
                 <div class="modal-content">
                     <div class="modal-close">X</div>
                     <h3>Walk-in Reservation Form</h3>
-                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
                     <span>PC Number</span>
                     <select>
                         <option value="">PC 1</option>
