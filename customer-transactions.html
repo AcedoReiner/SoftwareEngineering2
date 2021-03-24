@@ -47,26 +47,34 @@
 
                 <div class="customer-reservations-wrapper">
                     <!--This is the output div of customer information-->
-                    <div class="customer-reservation-wrapper">
-                        <div class="customer-reservation-item">
-                            <p>ID: 1</p>
-                            <p>Juan Dela Cruz</p>
-                        </div>
-                        <div class="customer-reservation-item">
-                            <p>PC 1</p>
-                        </div>
-                        <div class="customer-reservation-item">
-                            <p>11/03/21</p>
-                        </div>
-                        <div class="customer-reservation-item">
-                            <p>8:00am to 9:00am</p>
-                        </div>
-                        <div class="customer-reservation-item">
-                            <div class="customer-reservation-options">
-                                <!--Should we add a <form> here?-->
-                                <button class="btn-delete">Cancel</button>
-                            </div>
-                        </div>
+                    <div class="customer-account-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Res. ID</th>
+                                    <th>PC No.</th>
+                                    <th>Date</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>12/12/21</td>
+                                    <td>12:00nn</td>
+                                    <td>12:00nn</td>
+                                    <td>
+                                        <div class="customer-account-options">
+                                            <!--Should we add a <form> here?-->
+                                            <button class="btn-delete"><i class="fas fa-trash-alt"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
                     </div>
                 </div>
             </div>
