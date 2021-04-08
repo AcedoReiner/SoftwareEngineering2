@@ -8,45 +8,41 @@
     <title>Log in</title>
 </head>
 <body>
-<form action="save_task.php" method="POST">
-
-          <div class="form-group">
-            <input type="text" name="title" class="form-control" placeholder="Task Title" autofocus>
-          </div>
-          <div class="form-group">
-            <textarea name="description" rows="2" class="form-control" placeholder="Task Description"></textarea>
-          </div>
-          <input type="submit" name="save_task" class="btn btn-success btn-block" value="Save Task">
+<form action="DBfunctions/registersave.php" method="POST">
     <div class="login-reg-container">
         <div class="login-reg-header">
             <h2>Sign Up</h2>
         </div>
         <div class="login-reg-item">
+            <span>School ID</span>
+            <input name="schoolid" type="text" placeholder="Enter School ID" required>
+        </div>
+        <div class="login-reg-item">
             <span>First Name</span>
-            <input type="text" placeholder="Enter firstname" required>
+            <input name="firstname" type="text" placeholder="Enter firstname" required>
         </div>
         <div class="login-reg-item">
             <span>Last Name</span>
-            <input type="text" placeholder="Enter lastname" required>
+            <input name="lastname" type="text" placeholder="Enter lastname" required>
         </div>
         <div class="login-reg-item">
             <span>Username</span>
-            <input type="text" placeholder="Enter usename" required>
+            <input name="username" type="text" placeholder="Enter usename" required>
         </div>
         <div class="login-reg-item">
             <span>Password</span>
-            <input type="text" placeholder="Enter password" required>
+            <input name="password" type="text" placeholder="Enter password" required>
         </div>
         <div class="login-reg-item">
             <span>Confirmation Email</span>
-            <input type="email" placeholder="Enter email" required>
+            <input name="email" type="email" placeholder="Enter email" required>
         </div>
         <div class="login-reg-item">
-            <a href="login.html">Already have an account?</a>
+            <a href="index.php">Already have an account?</a>
         </div>
         <div class="login-reg-item">
-        <input type="submit" name="save_task" class="btn btn-success btn-block" value="Save Task">asd
-            <button class="login-btn">Sign Usp</button>
+        
+            <button class="login-btn">Sign Up</button>
         </div>
     </div>
 
